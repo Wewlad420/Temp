@@ -1,3 +1,4 @@
+#Enrico Green & Rose Hudson
 booklist = open("booklist.txt","r").read().split("\n")
 librarylog = open("librarylog.txt","r").read().split("\n")
 currentDay = int(librarylog[-1])
@@ -156,3 +157,8 @@ def main():
         print("     " + x.split("#")[0] + ": " + x.split("#")[1] + "%")
 
 main()
+print(canCheckOut("Arjun G","Eye of the world, Jordan"))
+print(canCheckOut("Piotr B","Eye of the world, Jordan"))
+print(canCheckOut("Sunny P","The gathering storm, Jordan"))
+print(canCheckOut("Arjun G","String Theory, Suskind"))
+print(canCheckOut("Ishan B","Loop Quantum Gravity, Gambini"))
